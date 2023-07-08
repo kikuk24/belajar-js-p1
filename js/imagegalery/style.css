@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+body{
+  background-color: beige;
+  text-align: center;
+}
+.container{
+  width: 600px;
+  margin: 10px auto;
+  border: 5px solid white;
+}
+.x{
+  width: 200px;
+  height: 200px;
+  float: left;
+  border: 2px solid whitesmoke;
+  box-sizing: border-box;
+}
+.x:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perhitungan</title>
+</head>
+<body>
+  <!-- * latihan calculator seederhana  -->
+  <form name="form" id="calc" action="#">
+    <label for="bilangan1">bilangan 1</label>
+    <input type="text" id="x" name="x">
+
+    <select name="opt" id="opt">
+      <option value="jumlah">+</option>
+      <option value="kurang">-</option>
+      <option value="kali">*</option>
+      <option value="bagi">/</option>
+    </select>
+
+    <label for="bilangan2">bilangan2</label>
+    <input type="text" id="y" name="y">
+    <input type="button" value="=" onclick="hitung()">    
+    <input type="text" name="hasil" disabled="true">
+    <input type="button" value="reset" onclick="reset()">
+  </form>
+
+  <script>
+    function hitung() {
+      var input = document.form;
+      var x = document.getElementById('x').value;
+      var y = document.getElementById('y').value;
+      var pil = form.opt.value;
+
+      if (opt == "jumlah") {
+        var z = x + y;
+      }
+      else if (pil == "kurang") {
+        var z= x-y;
+        
+      }
+      else if (pil == "kali") {
+        var z = x*y;
+      }
+      else if (pil == "kali") {
+        var z = x/y;
+      }
+      input.hasil.value= z;
+      input.x.value="";
+      input.y.value="";
+      
+    }
+
+  </script>
+</body>
+</html>
